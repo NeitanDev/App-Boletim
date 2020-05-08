@@ -1,5 +1,5 @@
 <h1 align="center">
-    <img alt="App Boletim" title="#delicinha" src="./screenshots/LogoVerde.png" width="200px" />
+    <img alt="App Boletim" title="#delicinha" src="./images/Write-Icon.png" width="200px" />
 </h1>
 
 <h4 align="center">
@@ -15,7 +15,7 @@
 <br>
 
 <p align="center">
-  <img alt="App Boletim" src="./screenshots/Githubimage.png" width="100%">
+  <img alt="App Boletim" src="./images/GithubLayout.png" width="100%">
 </p>
 
 ## :rocket: Tecnologias
