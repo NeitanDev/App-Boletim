@@ -12,8 +12,8 @@ var app = new Framework7({
   // Add default routes
   routes: [
     {
-      path: '/mencoes/',
-      url: 'mencoes.html',
+      path: '/pages/mencoes/',
+      url: 'pages/mencoes.html',
     },
   ],
   // ... other parameters
