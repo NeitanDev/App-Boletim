@@ -15,7 +15,7 @@
 	try {
 		$conecta = new PDO("mysql:host=$servidor;dbname=$banco", $usuario , $senha);
 		$conecta->exec("set names utf8"); //permite caracteres latinos.
-		$consulta = $conecta->prepare('SELECT * FROM tb00_alunos WHERE aluno_rm='.$_GET['rm']);
+		$consulta = $conecta->prepare('SELECT mencao_cod, aluno_rm, mencao_componente, mencao FROM tb01_menções WHERE aluno_rm='.$_GET['rm']);
 		$consulta->execute(array());
 		$resultadoDaConsulta = $consulta->fetchAll();
 		$json = json_encode($resultadoDaConsulta);
