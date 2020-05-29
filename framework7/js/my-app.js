@@ -16,6 +16,11 @@ var app = new Framework7({
       name: 'mencoes',
       path: '/pages/mencoes/',
       url: 'pages/mencoes.html',
+      on: {
+        pageInit: function (about) {
+          CarregaMencoes();
+        },
+      },
     },
   ],
   // ... other parameters
