@@ -17,11 +17,12 @@ $$("#btnver").click(function () {
             app.dialog.alert('RM não encontrado')
 
         }
-        app.dialog.close();
+        // app.dialog.close();
     });
 });
 
 function CarregaMencoes() {
+    var conteudo = ``;
     app.request.json('https://aluno.etecarmine.com.br/3Etim/Neitan/mencoes.php?rm=' + $$('#txtrm').val(),
         function (data) {
             console.log('https://aluno.etecarmine.com.br/3Etim/Neitan/mencoes.php?rm=' + $$('#txtrm').val());
@@ -32,7 +33,14 @@ function CarregaMencoes() {
                 console.log('mencao_componente: ' + data[linha].mencao_componente);
                 console.log('mencao: ' + data[linha].mencao);
 
-
+                conteudo += `<li><div class="item-content"><div class="item-inner">` +
+                    `<div class="item-title">${data[linha].mencao_componente}</div>` +
+                    `<div class="item-after">${data[linha].mencao}</div>` +
+                    `</div></div></li>`;
             }
+
+            console.log(conteudo);
+            $$('#lista').html(conteudo);
+            app.dialog.close();
         });
 }
