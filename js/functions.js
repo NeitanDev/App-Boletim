@@ -1,3 +1,10 @@
+function Autenticar(){
+    if(localStorage.getItem('rm')>0){
+        $$('#txtrm').val(localStorage.getItem('rm'));
+        mainView.router.navigate({ name: 'mencoes' });
+    }
+}
+
 $$("#btnver").click(function () {
     app.dialog.preloader('Loading...');
     app.request.json('https://aluno.etecarmine.com.br/3Etim/Neitan/webservice.php?rm=' + $$('#txtrm').val(), function (data) {
