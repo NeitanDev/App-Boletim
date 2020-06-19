@@ -15,7 +15,7 @@
 <br>
 
 <p align="center">
-  <img alt="App Boletim" src="./GitHub/femi.git" width="100%">
+  <img alt="App Boletim" src="./GitHub/femi.gif" width="100%">
 </p>
 
 ## :rocket: Tecnologias
